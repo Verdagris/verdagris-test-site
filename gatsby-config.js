@@ -6,5 +6,15 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+
+  siteMetadata: {
+    title: 'Verdagris',
+    author: 'Theodore Egling',
+    slogan: 'Nature and Art'
+  },
+
+  plugins: [
+    'gatsby-plugin-sass'
+  ]
 }
+
