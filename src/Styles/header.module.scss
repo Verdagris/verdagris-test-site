@@ -9,16 +9,20 @@
 }
 
 .nav-list {
-    display: flex;
+    display: inline-flex;
+    text-align: center;
     list-style-type: none;
     margin: 0;
+    
 }
 
 .nav-item {
     color: #999999;
     font-size: .9rem;
-    margin-right: 2rem;
+    margin-right: .8rem;
+    margin-left: .8rem;
     text-decoration: none;
+    
 }
 
 .nav-item:hover {

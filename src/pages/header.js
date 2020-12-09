@@ -17,8 +17,9 @@ const Header = () =>{
     `)
 
     return(
-        <header className={headerStyles.header}>
-            <h1>
+        <header  className={headerStyles.header}>
+            <center>
+            <h1> 
             <Link className={headerStyles.title} to ="/">
                 {data.site.siteMetadata.title}
                 </Link>                
@@ -43,7 +44,7 @@ const Header = () =>{
                     </li>
                 </ul>
             </nav>
-
+            </center>
         </header>
     )
 

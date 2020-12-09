@@ -14,7 +14,31 @@ module.exports = {
   },
 
   plugins: [
-    'gatsby-plugin-sass'
+    
+  
+
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-embedder`,
+            options: {
+              customTransformers: [
+                // Your custom transformers
+              ],
+              services: {
+                // The service-specific options by the name of the service
+              },
+            },
+          },
+
+          'gatsby-plugin-sass',
+          // Other plugins here...
+        ],
+      },
+    },
+ 
   ]
 }
 
