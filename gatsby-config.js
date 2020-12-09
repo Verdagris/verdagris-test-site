@@ -14,9 +14,6 @@ module.exports = {
   },
 
   plugins: [
-    
-  
-
     {
       resolve: `gatsby-transformer-remark`,
       options: {
