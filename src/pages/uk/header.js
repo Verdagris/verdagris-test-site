@@ -2,9 +2,9 @@ import React from "react"
 import {Link, graphql, useStaticQuery} from "gatsby"
 
 //import '../Styles/header.module.scss'
-import headerStyles from '../Styles/header.module.scss'
+import headerStyles from '../../Styles/header.module.scss'
 
-const Header = () =>{
+const HeaderUK = () =>{
     const data = useStaticQuery(graphql`
         query {
             site{
@@ -20,7 +20,7 @@ const Header = () =>{
         <header  className={headerStyles.header}>
             <center>
             <h1> 
-            <Link className={headerStyles.title} to ="/">
+            <Link className={headerStyles.title} to ="/uk/">
                 {data.site.siteMetadata.title}
                 </Link>                
             </h1>
@@ -31,19 +31,22 @@ const Header = () =>{
             <nav>
                 <ul className={headerStyles.navList}>
                     <li>
-                    <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to ="/">HOME</Link>
+                    <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to ="/uk/home">UK HOME</Link>
                     </li>
                     <li>
-                    <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to ="/art">ART</Link>
+                    <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to ="/uk/art">UK ART</Link>
                     </li>
                     <li>
-                    <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to ="/music">MUSIC</Link>
+                    <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to ="/uk/music">UK MUSIC</Link>
                     </li>
                     <li>
-                    <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to ="/contact">CONTACT ME</Link>
+                    <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to ="/uk/contact">UK CONTACT ME</Link>
                     </li>
-                    <li>
-                    <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to ="/us/home">UK</Link>
+
+                </ul>
+                <ul>                    
+                    <li style={{marginLeft:"-25px"}}>
+                    <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to ="/us/home">Change to (US) English</Link>
                     </li>
                 </ul>
             </nav>
@@ -53,4 +56,4 @@ const Header = () =>{
 
 }
 
-export default Header
+export default HeaderUK

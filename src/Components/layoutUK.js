@@ -1,15 +1,17 @@
 import React from "react"
 
-
-import Footer from "../pages/footer"
+import HeaderUK from "../pages/uk/header"
+import FooterUK from "../pages/uk/footer"
 import "../Styles/index.scss"
 import layoutStyles from '../Styles/layout.module.scss'
 
-const Layout = (props) => {
+const LayoutUK = (props) => {
     return (
         <div className={layoutStyles.container}>
             <div className={layoutStyles.content}>  
-                
+                <HeaderUK />
+
+                {/* CLOUDS */}
                 <div>
         <div className="cloud-circle"></div>
 
@@ -28,17 +30,19 @@ const Layout = (props) => {
                 <feDisplacementMap in="SourceGraphic" scale = "400" />
             </filter>
         </svg>
-
         </div>
-        <div>
+
+
+        {/* CHILDREN */}
+        <div style={{marginTop:"-50px"}}>
                <center> {props.children} </center>
                </div>
             </div>
-            <Footer />
+            <FooterUK />
         </div>
     )
 
 
 }
 
-export default Layout
+export default LayoutUK

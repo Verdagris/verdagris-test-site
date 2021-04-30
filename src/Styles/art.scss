@@ -1,6 +1,5 @@
 .cloud-circle{
-    display: flex;
-    overflow: hidden;
+z-index: -1;
 float: left;
 // margin-left: 100px;
 transform: rotateY("90");
@@ -44,6 +43,7 @@ animation-timing-function: linear;
 
 
 .cloud-circle2{
+        z-index: -1;
     display: flex;
     overflow: hidden;
 float: left;
