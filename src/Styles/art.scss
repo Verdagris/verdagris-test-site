@@ -1,13 +1,87 @@
 .cloud-circle{
+    display: flex;
+    overflow: hidden;
 float: left;
-margin-left: 100px;
-width: 500px;
-height: 275px;
-background: c#000;
-border-radius: 50%;
+// margin-left: 100px;
+transform: rotateY("90");
+max-width: 100vw;
+max-height: 100vh;
+background: transparent;
+border-radius: 80%;
 filter:url(#filter);
-box-shadow: 400px 400px 60px 0px rgb(202, 8, 8);
 position: absolute;
-top: -320px;
-left: -320px;
+// transform: translateY(500px);
+animation-name: cloudMove;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+@keyframes cloudMove{
+
+    0% {
+        box-shadow: 500px 300px 500px 50px rgba(7, 227, 235, 0.2);
+        background: rgba(7, 227, 235, 0.2);
+	}
+	25% {
+        box-shadow: 600px 300px 700px 500px rgba(6, 162, 173, 0.2);
+        background: rgba(6, 162, 173, 0.2);
+	}
+	50% {
+        box-shadow: 800px 300px 1000px 1000px rgba(8, 179, 202, 0.2);
+        background: rgba(8, 179, 202, 0.2);
+	}
+	75% {
+        box-shadow: 500px 300px 700px 500px rgba(8, 115, 202, 0.2);
+        background: rgba(8, 115, 202, 0.2);
+	}
+	100% {
+        box-shadow: 300px 300px 500px 50px rgba(8, 163, 202, 0.2);
+        background: rgba(8, 163, 202, 0.2);
+	}
+
+}
+
+
+.cloud-circle2{
+    display: flex;
+    overflow: hidden;
+float: left;
+// margin-left: 100px;
+max-width: 100vw;
+max-height: 100vh;
+background: transparent;
+border-radius: 80%;
+filter:url(#filter);
+position: absolute;
+// transform: translateY(500px);
+animation-name: cloudMove2;
+animation-duration: 8s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+@keyframes cloudMove2{
+
+    0% {
+        box-shadow: 000px 300px 500px 50px rgba(235, 7, 113, 0.2);
+        background: rgba(235, 7, 113, 0.2);
+	}
+	25% {
+        box-shadow: 000px 300px 700px 500px rgba(167, 6, 173, 0.2);
+        background: rgba(167, 6, 173, 0.2);
+	}
+	50% {
+        box-shadow: 000px 300px 1000px 1000px rgba(202, 8, 202, 0.2);
+        background: rgba(202, 8, 202, 0.2);
+	}
+	75% {
+        box-shadow: 000px 300px 700px 500px rgba(202, 8, 176, 0.2);
+        background: rgba(202, 8, 176, 0.2);
+	}
+	100% {
+        box-shadow: 000px 300px 500px 50px rgba(202, 8, 192, 0.2);
+        background: rgba(202, 8, 192, 0.2);
+	}
+
 }
