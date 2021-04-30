@@ -16,7 +16,7 @@ const FooterUK = () =>{
 
     <footer>
         <center>
-        <p>Created for UK by {data.site.siteMetadata.author} ©  2020 </p>
+        <p>Created for UK by {data.site.siteMetadata.author} ©  2021 </p>
         </center>
     </footer>
     )

@@ -16,7 +16,7 @@ const FooterUS = () =>{
 
     <footer>
         <center>
-        <p>Created for US by {data.site.siteMetadata.author} ©  2020 </p>
+        <p>Created for US by {data.site.siteMetadata.author} ©  2021 </p>
         </center>
     </footer>
     )
