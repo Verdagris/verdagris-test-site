@@ -4,6 +4,7 @@ import HeaderUS from "../pages/us/header"
 import FooterUS from "../pages/us/footer"
 import "../Styles/index.scss"
 import layoutStyles from '../Styles/layout.module.scss'
+import CountrySelector from './CountrySelector.js'
 
 const LayoutUS = (props) => {
     return (

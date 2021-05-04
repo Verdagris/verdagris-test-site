@@ -5,11 +5,13 @@ import FooterUK from "../pages/uk/footer"
 import "../Styles/index.scss"
 import layoutStyles from '../Styles/layout.module.scss'
 
+
 const LayoutUK = (props) => {
     return (
         <div className={layoutStyles.container}>
             <div className={layoutStyles.content}>  
                 <HeaderUK />
+               
 
                 {/* CLOUDS */}
                 <div>

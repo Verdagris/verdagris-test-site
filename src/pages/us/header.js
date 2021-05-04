@@ -3,6 +3,7 @@ import {Link, graphql, useStaticQuery} from "gatsby"
 
 //import '../Styles/header.module.scss'
 import headerStyles from '../../Styles/header.module.scss'
+import CountrySelector from '../../Components/CountrySelector.js'
 
 const HeaderUS = () =>{
     const data = useStaticQuery(graphql`
@@ -42,6 +43,9 @@ const HeaderUS = () =>{
                     <li>
                     <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to ="/us/contact">US CONTACT ME</Link>
                     </li>
+                    <li>
+                        <CountrySelector />
+                    </li>
                    
                     {/* <select onClick="window.location.href=this.value">
                      
@@ -54,11 +58,11 @@ const HeaderUS = () =>{
                         </option>
                         </select> */}
                 </ul>
-                <ul>
+                {/* <ul>
                     <li style={{marginLeft:"-25px"}}>
                     <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to ="/uk/home">Change to (UK) English</Link>
                     </li>
-                </ul>
+                </ul> */}
             </nav>
             </center>
         </header>

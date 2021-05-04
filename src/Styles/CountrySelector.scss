@@ -1,0 +1,23 @@
+.globe {
+  height: 30px;
+  width: 30px;
+  color: transparent;
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: none;
+    cursor: pointer;
+    background: url("../images/globe.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  select :first-child {
+    color: transparent;
+  }
+}

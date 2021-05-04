@@ -4,6 +4,7 @@ import React from "react"
 import Footer from "../pages/footer"
 import "../Styles/index.scss"
 import layoutStyles from '../Styles/layout.module.scss'
+import CountrySelector from './CountrySelector.js'
 
 const Layout = (props) => {
     return (
