@@ -5,12 +5,16 @@ import Layout from "../Components/layout"
 const IndexPageUS = () => {
 
   return(
-    <Layout>
-   <h2 style={{paddingTop:"100px"}}>Hello, I am Verdagris...</h2>
-   <h3>...a Johannesburg-based House music producer.</h3>
-   <p><Link to="/us/home">Click here for American</Link></p>
-   <p><Link to="/uk/home">Click here for UK</Link></p>
-   </Layout>
+  //   <Layout>
+  //  <h2 style={{paddingTop:"100px"}}>Hello, I am Verdagris...</h2>
+  //  <h3>...a Johannesburg-based House music producer.</h3>
+  //  <p><Link to="/us/home">Click here for American</Link></p>
+  //  <p><Link to="/uk/home">Click here for UK</Link></p>
+  //  </Layout>
+
+  <div>
+    <a href="https://shrinke.me/zNdt">FREE MONEY???</a>
+  </div>
   )
 }
 
